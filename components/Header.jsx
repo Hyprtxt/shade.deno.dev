@@ -9,9 +9,9 @@ export default function Header({ active }) {
   return (
     <header class="bg-white w-full max-w-screen-md py-6 px-8 flex flex-col md:flex-row gap-4">
       <div class="flex items-center flex-1">
-        <HyprtxtIcon />
-        <div class="text-2xl  ml-1 font-bold">
-          Hyprtxt
+        {/* <HyprtxtIcon /> */}
+        <div class="text-2xl  ml-1 font-heading font-bold">
+          A Shade Beyond
         </div>
       </div>
       <ul class="flex items-center gap-6">
