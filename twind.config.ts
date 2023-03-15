@@ -14,7 +14,6 @@ export default {
       { fontFamily: "Raleway" },
     ],
     body: apply`bg-gray-900`,
-    // h1: apply`text(gray-800 uppercase)`, // Grouping syntax
     a: apply`text-indigo text-underline visited:text-violet hover:text-blue`,
     "h1, h2, h3": {
       "@apply": `mb-3 font-heading font-normal`,
