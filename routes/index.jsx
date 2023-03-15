@@ -8,11 +8,11 @@ export default function Home(props) {
   return (
     <>
       <Head>
-        <title>Hyprtxt | Good Websites</title>
+        <title>A Shade Beyond LLC</title>
         <meta name="author" content="Taylor Young" />
         <meta
           name="description"
-          content="Hyprtxt is Taylor's Brand. Webmaster for hire. Based in Prescott, AZ. Click on in!"
+          content="We&apos;ve been in business for over 30 years as a full-service awning company that can handle any shade needs you might have."
         />
       </Head>
       <div class={tw`${homeStyles}`}></div>

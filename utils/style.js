@@ -55,7 +55,7 @@ export const globalStyles = css({
         zIndex: -10,
         width: "100%",
         height: "100%",
-        background: `url(${asset("/nebula.jpg")}) no-repeat center center`,
+        background: `url(${asset("/background.jpg")}) no-repeat center center`,
         backgroundSize: "cover",
       },
       backgroundColor: theme("colors.purple"),
