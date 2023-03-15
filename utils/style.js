@@ -9,22 +9,6 @@ export const globalStyles = css({
       "&:hover": apply`text-blue underline`,
       "&:active": apply`text-green`,
     },
-    "h1, h2, h3": {
-      "@apply": `mb-3`,
-      a: {
-        "@apply": `text-dark`,
-        "&:visited": apply`text-dark`,
-      },
-    },
-    h1: {
-      "@apply": `text-4xl`,
-    },
-    h2: {
-      "@apply": `text-2xl`,
-    },
-    h3: {
-      "@apply": `text-xl`,
-    },
     ".markdown": {
       "a": {
         "@apply": "underline",

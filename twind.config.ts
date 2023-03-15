@@ -7,18 +7,24 @@ export default {
   preflight: {
     "@import":
       `url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Raleway&display=swap')`,
+    "@font-face": [
+      {
+        fontFamily: "Libre Bodoni",
+      },
+      { fontFamily: "Raleway" },
+    ],
     body: apply`bg-gray-900`,
     // h1: apply`text(gray-800 uppercase)`, // Grouping syntax
     a: apply`text-indigo text-underline visited:text-violet hover:text-blue`,
     "h1, h2, h3": {
-      "@apply": `mb-3 font-heading`,
+      "@apply": `mb-3 font-heading font-normal`,
       a: {
-        "@apply": `text-dark`,
+        "@apply": `text-dark no-underline`,
         "&:visited": apply`text-dark`,
       },
     },
     h1: {
-      "@apply": `text-4xl`,
+      "@apply": `text-3xl`,
     },
     h2: {
       "@apply": `text-2xl`,
