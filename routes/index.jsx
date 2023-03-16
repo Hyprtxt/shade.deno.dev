@@ -31,6 +31,17 @@ export default function Home(props) {
           </p>
         </section>
         <section class="mx-auto max-w-screen-md">
+          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
+            <div class="border-dashed border-purple border-4 p-32">
+              <p class={tw`text-center w-full`}>
+                This is a place for a slideshow. Really close tight in
+                photography, to avoid context. Alternate commerical and
+                residential, show many categories of products.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="mx-auto max-w-screen-md">
           <Features />
           <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
             <p class={tw`text-center w-full`}>
@@ -40,6 +51,15 @@ export default function Home(props) {
         </section>
         <section class="mx-auto max-w-screen-md">
           <Services />
+        </section>
+        <section class="mx-auto max-w-screen-md">
+          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
+            <div class="border-dashed border-indigo border-4 p-32 w-full">
+              <p class={tw`text-center w-full`}>
+                A Google Maps API component.
+              </p>
+            </div>
+          </div>
         </section>
       </Layout>
     </>

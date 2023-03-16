@@ -39,7 +39,7 @@ export default function Footer({ children }) {
 
       {menus.map((item) => (
         <div class="mb-4" key={item.title}>
-          <div class="font-bold">{item.title}</div>
+          <div class="font-bold font-heading">{item.title}</div>
           <ul class="mt-2">
             {item.children.map((child) => (
               <li class="mt-2" key={child.name}>
@@ -57,11 +57,11 @@ export default function Footer({ children }) {
 
       <div class="text-gray-500 space-y-2">
         <div class="text-xs">
-          Copyright © Hyprtxt<br />
-          Coded in Arizona.
+          Copyright © A Shade Beyond LLC<br />
+          Coded in Arizona by <a href="https://hyprtxt.dev">Hyprtxt</a>
         </div>
         <a
-          href="https://github.com/hyprtxt/hyprtxt.deno.dev"
+          href="https://github.com/Hyprtxt/shade.deno.dev"
           class="inline-block hover:text-black"
           aria-label="Github Icon"
         >
