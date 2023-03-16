@@ -1,8 +1,10 @@
 import { Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 import Services from "@/components/Services.jsx"
+import Location from "@/components/Location.jsx"
 import Features from "@/components/Features.jsx"
 import { tw } from "twind"
+
 export default function Home(props) {
   return (
     <>
@@ -15,6 +17,17 @@ export default function Home(props) {
       </Head>
 
       <Layout data={props}>
+        <section class="mx-auto max-w-screen-md">
+          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
+            <div class="border-dashed border-purple border-4 p-32">
+              <p class={tw`text-center w-full`}>
+                This is a place for a slideshow. Really close tight in
+                photography, to avoid context. Alternate commerical and
+                residential, show many categories of products.
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
           <h1>
             Get Cool, Save Money, Beautify Your Home!
@@ -31,17 +44,6 @@ export default function Home(props) {
           </p>
         </section>
         <section class="mx-auto max-w-screen-md">
-          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
-            <div class="border-dashed border-purple border-4 p-32">
-              <p class={tw`text-center w-full`}>
-                This is a place for a slideshow. Really close tight in
-                photography, to avoid context. Alternate commerical and
-                residential, show many categories of products.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="mx-auto max-w-screen-md">
           <Features />
           <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
             <p class={tw`text-center w-full`}>
@@ -53,13 +55,7 @@ export default function Home(props) {
           <Services />
         </section>
         <section class="mx-auto max-w-screen-md">
-          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
-            <div class="border-dashed border-indigo border-4 p-32 w-full">
-              <p class={tw`text-center w-full`}>
-                A Google Maps API component.
-              </p>
-            </div>
-          </div>
+          <Location />
         </section>
       </Layout>
     </>

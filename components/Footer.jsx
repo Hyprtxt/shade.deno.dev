@@ -1,13 +1,14 @@
-import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
+// import HyprtxtIcon from "@/components/HyprtxtIcon.jsx"
 import BrandGithub from "$icons/brand-github.tsx"
 
-export default function Footer({ children }) {
+export default function Footer({ children, size = "md" }) {
   const menus = [
     {
       title: "Pages",
       children: [
         { name: "Home", href: "/" },
         { name: "Showcase", href: "/showcase" },
+        { name: "Location", href: "/location" },
       ],
     },
     {
@@ -20,7 +21,9 @@ export default function Footer({ children }) {
   ]
 
   return (
-    <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-md gap-8 md:gap-16 px-8 py-8 text-sm mb-5">
+    <div
+      class={`bg-white flex flex-col md:flex-row w-full max-w-screen-${size} gap-8 md:gap-16 px-8 py-8 text-sm mb-5`}
+    >
       <div class="flex-1">
         <div class="flex items-center gap-1">
           {/* <HyprtxtIcon clazz="h-5 w-5" /> */}

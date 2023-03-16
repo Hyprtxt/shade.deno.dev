@@ -4,19 +4,21 @@ import { tw } from "twind"
 import { DENO_ENV } from "@/utils/config.js"
 import { globalStyles } from "@/utils/style.js"
 
-const Layout = ({ children, data = {} }) => (
+const Layout = ({ children, data = {}, size = "md" }) => (
   <>
     <div class={tw`${globalStyles}`}></div>
     <section class={tw`flex justify-center header-wrapper`}>
-      <Header />
+      <Header size={size} />
     </section>
     {children}
     <section class={tw`flex justify-center`}>
-      <Footer />
+      <Footer size={size} />
     </section>
     {DENO_ENV === "development"
       ? (
-        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
+        <section
+          class={`max-w-screen-${size} mx-auto py-8 px(8) space-y-4 bg-white`}
+        >
           <pre>{JSON.stringify(data, null, 2 )}</pre>
         </section>
       )

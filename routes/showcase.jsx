@@ -10,8 +10,8 @@ export default function Showcase(props) {
       <Head>
         <title>Hyprtxt | Good Websites</title>
       </Head>
-      <Layout data={props}>
-        <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white markdown">
+      <Layout data={props} size={`lg`}>
+        <section class="max-w-screen-lg mx-auto py-8 px(8) space-y-4 bg-white markdown">
           <h1>
             Showcase
           </h1>
