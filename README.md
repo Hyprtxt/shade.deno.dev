@@ -1,5 +1,8 @@
 # fresh project
 
+This was for A Shade Beyond LLC. If you feel like this violates your copyright
+please contact [Taylor](https://hyprtxt.deno.dev) and I will disapper it.
+
 ### Usage
 
 Start the project:
