@@ -6,7 +6,7 @@ export default {
   selfURL: import.meta.url,
   preflight: {
     "@import":
-      `url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Raleway&display=swap')`,
+      `url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:wght@400;700&family=Raleway:wght@400;700&display=swap')`,
     "@font-face": [
       {
         fontFamily: "Libre Bodoni",

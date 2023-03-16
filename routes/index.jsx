@@ -1,9 +1,8 @@
 import { Head } from "$fresh/runtime.ts"
 import Layout from "@/components/Layout.jsx"
 import Services from "@/components/Services.jsx"
+import Features from "@/components/Features.jsx"
 import { tw } from "twind"
-import { homeStyles } from "@/utils/style.js"
-
 export default function Home(props) {
   return (
     <>
@@ -14,14 +13,7 @@ export default function Home(props) {
           content="We&apos;ve been in business for over 20 years as a full-service awning company that can handle any shade needs you might have."
         />
       </Head>
-      <div class={tw`${homeStyles}`}></div>
-      <section class="landing-page">
-        <div class="mx-auto">
-          <p class="my-8">Welcome 👋</p>
-          <div class="logo"></div>
-          <p class="my-8">本当に速いのウェブサイト</p>
-        </div>
-      </section>
+
       <Layout data={props}>
         <section class="max-w-screen-md mx-auto py-8 px(8) space-y-4 bg-white">
           <h1>
@@ -37,6 +29,14 @@ export default function Home(props) {
             <em>full-service</em>{" "}
             awning company that can handle any shade needs you might have.
           </p>
+        </section>
+        <section class="mx-auto max-w-screen-md">
+          <Features />
+          <div class="flex flex-col md:flex-row gap-8 bg-white p-8">
+            <p class={tw`text-center w-full`}>
+              We also provide maintenance, repairs, and warranty services!
+            </p>
+          </div>
         </section>
         <section class="mx-auto max-w-screen-md">
           <Services />

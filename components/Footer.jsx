@@ -23,20 +23,17 @@ export default function Footer({ children }) {
     <div class="bg-white flex flex-col md:flex-row w-full max-w-screen-md gap-8 md:gap-16 px-8 py-8 text-sm mb-5">
       <div class="flex-1">
         <div class="flex items-center gap-1">
-          <HyprtxtIcon clazz="h-5 w-5" />
-          <div class="font-bold text-2xl">
-            Hyprtxt
+          {/* <HyprtxtIcon clazz="h-5 w-5" /> */}
+          <div class="font-bold text-2xl font-heading">
+            A Shade Beyond
           </div>
         </div>
         <div class="text-gray-500">
-          Webmaster for Hire
+          Full Service Awnings
         </div>
         <div class="text-gray-500">
-          <a href="mailto:taylor@hyprtxt.dev">taylor@hyprtxt.dev</a>
-        </div>
-        <div class="text-gray-500">
-          <a href="tel:+12147993897">+1 214 799-3897</a>{" "}
-          (<a href="sms:+12147993897">sms</a>)
+          <a href="tel:+19287789300">+1 928 778-9300</a>{" "}
+          (<a href="sms:+19287789300">sms</a>)
         </div>
       </div>
 

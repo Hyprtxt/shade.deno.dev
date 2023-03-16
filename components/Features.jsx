@@ -6,20 +6,34 @@ import IconChevronRight from "$icons/chevron-right.tsx"
 export default function Features() {
   const featureItems = [
     {
-      icon: IconAlarm,
-      description:
-        "Fast websites. We keep the Hyper in our HyperText Markup. Lean effective sites get to the message quickly.",
-      // link: "#",
+      icon: IconArmchair,
+      description: "Make your home or business a more pleasant place to:",
+      features: [
+        "Sit",
+        "Lounge",
+        "Entertain",
+        "Dine",
+      ],
     },
     {
       icon: IconAirBalloon,
-      description:
-        "Creative Solutions. A track record of getting things done, even when other developers say it can't be done.",
+      description: "Reduce solar gain in your home or business to:",
+      features: [
+        "Save money on your A/C",
+        "Save energy",
+        "Create a greener home or business",
+      ],
     },
     {
-      icon: IconArmchair,
-      description:
-        "Tons of Experience. We build businesses by integrating computer services together.",
+      icon: IconAlarm,
+      description: "A Shade Beyond provides:",
+      features: [
+        "FREE Estimates",
+        "Design consultation",
+        "In-House custom manufacturing",
+        "Hand-painted commercial graphic transfers",
+        "Expert installation",
+      ],
       // link: "#",
     },
   ]
@@ -32,9 +46,12 @@ export default function Features() {
             <div class="bg-purple inline-block p-3 rounded-xl text-green">
               <item.icon class="w-10 h-10" />
             </div>
-            <p class="text-dark">
+            <h3 class="text-dark">
               {item.description}
-            </p>
+            </h3>
+            <ul>
+              {item.features.map((feature) => <li>{feature}</li>)}
+            </ul>
             {item.link &&
               (
                 <a class="block" href={item.link}>
